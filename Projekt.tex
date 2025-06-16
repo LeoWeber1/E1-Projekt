@@ -870,7 +870,7 @@ To set up data exchange between the safety and standard controller, follow these
 		\item Open the context menu and select \textbf{Add Object → Logical Exchange GVL}.
 		\item Give the object an appropriate name and add it to the project tree.
 	\end{itemize}
-		\begin{figure}[H]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\textwidth]{19.JPG}
 	\end{figure}
@@ -881,201 +881,215 @@ To set up data exchange between the safety and standard controller, follow these
 	\end{itemize}
 \end{enumerate}
 
+\subsection{Exchange Fieldbus with Safe I/Os}
+The exchange of I/O data is also performed via logical devices. If the assignment is unambiguous (e.g., only one safety controller in the project tree), inserting the physical device automatically adds and links the logical device under \texttt{Logical I/Os} in the Safety Application.
 
-\section{Logical Devices}
+The linkage is displayed:
+\begin{itemize}
+	\item In the project tree, behind the name of both the physical and logical device as \texttt{[$\rightarrow$]} or \texttt{[$\leftarrow$]}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{21.JPG}
+	\end{figure}
+	\item In the Mapping Editor of the physical device.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{22.JPG}
+	\end{figure}
+\end{itemize}
 
-\subsection{Data Exchange Between Safety and Standard Controller}
+In the Mapping Editor of the physical device, the linkage can be reset or re-established.
 
-In the node \texttt{-> Safety Logic -> SafetyApp -> Logical I/Os}, open the context menu and select the command \textbf{"Add Logical Device"}. In the dialog, select an object from the node \texttt{Logical exchange devices}.
+\textbf{Product Marketing}: Set up Debian + vPLC + vSafePLC from scratch. \\
+\textbf{CODESYS Project}: For using CODESYS Safe Control – 33.
 
-In the node \texttt{-> PLC Logic -> Application}, open the context menu and select \textbf{"Add Object -> Logical Exchange GVL"}, give it an appropriate name, and add it to the project tree.
+For the inserted logical device, a global function block (FB) instance is created in the Safety Application with the variable name and type corresponding to the logical device. The FB instance is uniquely defined in the Safety Mapping Editor of the logical device.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{23.JPG}
+\end{figure}
 
-In the editor, the logical exchange device can be linked with the GVL.
+\textbf{Note}: When inserting, the logical device name may start with an underscore (\texttt{\_}). However, the FB instance starts with \texttt{x\_} (starting from SafetyVersion 4.2; previously, this caused a build error).
 
-\subsection*{Exchange via Fieldbus with Safety IOs}
-
-The exchange of IO data also occurs via logical devices. If the assignment is clear (e.g., only one safety controller in the project tree), then when inserting the physical device, the logical device is automatically inserted and linked under the Safety Application in the node \texttt{Logical I/Os}.
-
-The linkage is shown in the project tree for both the physical and logical device after the name in \texttt{[->]} or \texttt{[<-]}, and in the mapping editor of the physical device.
-
-In the mapping editor of the physical device, the link can be reset or re-established.
-
-A global FB instance is created in the Safety Application for the inserted logical device with the variable name and type corresponding to the logical device. The FB instance is clearly defined in the Safety Mapping Editor of the logical device.
-
-\textbf{Note:} When inserting, the logical device name may begin with an "\_", whereas the FB instance begins with "x\_" (only from Safety Version 4.2 onwards; older versions will produce a build error).
-
-\textbf{SIL3-supported fieldbuses with safe IOs:}
+Fieldbuses supported for SIL3 with safe I/Os:
 \begin{itemize}
 	\item PROFInet with PROFIsafe V2.4
-	\item PROFInet with PROFIsafe V2.6 (only Safe Control Core)
+	\item PROFInet with PROFIsafe V2.6 (only for Safe Control Core)
 	\item EtherCAT with FSoE (planned for Safe Control Core)
 \end{itemize}
 
-\section{PROFIsafe}
+\subsection{PROFIsafe}
+Two versions are available: PROFIsafe V2.4 and V2.6. New F-Device devices must only support V2.6. The physical device defines the version, which is not switchable.
 
-Two versions: PROFIsafe V2.4 and V2.6. New F-Device devices may only support V2.6. The physical device defines the version; it cannot be changed.
-
-\section{Safety Application}
-
-Each object corresponds to a "yellow" editor. Each object editor stores the data 1:1 in the "interpreter" format, which is loaded into the safety runtime during download.
-
-The safety runtime also expects information from the safety checker, which is executed during "Build" or before "Login with Download".
+\subsection{Safety Application}
+A list of objects.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{24.JPG}
+\end{figure}
+Each object corresponds to a ``yellow'' editor. Every object editor stores the data in a 1:1 ``Interpreter'' format, which is loaded into the Safety Runtime during download. Additionally, the Safety Runtime expects information from the Safety Checker, which is executed during the ``Build'' or before the ``Login with Download''.
 
 \subsection{Global Variable List (GVL)}
-
-\textbf{Note:} No namespace in the GVL. Variables are accessed via \texttt{VAR EXTERNAL}. No problem, as all variable names in a safety application must be unique.
+\textbf{Note}: No namespace is used for the GVL. GVL variables are accessed via \texttt{VAR EXTERNAL}. This is not an issue since variable names in a Safety Application must be unique.
 
 \subsection{IO Mapping}
+Defines the variables mapped into the Safety Application. Variable definitions are implicitly of type Global and are used in the Safety Application's POUs with \texttt{VAR\_EXTERNAL}. 
 
-Definition of variables mapped to the safety application. Variable definition is implicitly global. Use in safety application with \texttt{VAR\_EXTERNAL}.
+In the Mapping Editor, the linkage to the physical device and the global function block (FB) instance of the corresponding IO stack is displayed.
 
-In the mapping editor, both the link to the physical device and the global FB instance of the corresponding IO stack are shown.
-
-\textbf{Note:} A byte must be defined either as a byte or as individual bits—mixing is not allowed.
+\textbf{Note}: In the Mapping Editor, a byte must be defined either as a single byte or as individual bits; mixing both is not allowed.
 
 \subsection{IO Configuration (F-Parameter)}
-
-Settings according to the assigned physical safe I/O device.
-
-For PROFIsafe or FSoE F-devices: F-Destination Address with DIP switches on the IO or address assignment using vendor-specific tools.
+Settings corresponding to the assigned physical safe I/O device. For PROFIsafe or FSoE F-devices, the F-Destination Address is set via DIP switches on the IO or assigned using a device-manufacturer-specific tool.
 
 \subsection{POU, FB}
-
 Two different object types:
-\begin{itemize}
-	\item Basic: Only FBs using boolean logic combinations with AND or OR. No NOT!
-	\item Extended: Full set of supported operators (see ToolBox).
-\end{itemize}
 
-\textbf{Note:} Safety programming strictly distinguishes between logical and numerical data types.
+\textbf{Product Marketing}: Set up Debian + vPLC + vSafePLC from scratch. \\
+\textbf{CODESYS Project}: For using CODESYS Safe Control – 35.
 
 \begin{itemize}
-	\item Logical types: \texttt{BOOL, BYTE, WORD, DWORD} with operations AND, OR, NOT
-	\item Numerical types: \texttt{INT, UINT, DINT} with operations ADD, SUB, DIV, MUL, LE, GT, etc.
+	\item \textbf{Basic}: Only FBs with combinatorial logic of boolean operations using \texttt{AND} or \texttt{OR}. No \texttt{NOT}!
+	\item \textbf{Extended}: Full range of supported operators (see Toolbox).
 \end{itemize}
 
-Structures, arrays, enums, and pointers are not supported.
+\textbf{Note}: Safety programming strictly distinguishes between logical and numerical data types. Numerical operations cannot be performed on logical data types, and logical operations cannot be performed on numerical data types.
+
+\begin{itemize}
+	\item \textbf{Logical Data Types}: \texttt{BOOL}, \texttt{BYTE}, \texttt{WORD}, \texttt{DWORD}, etc., with operations \texttt{AND}, \texttt{OR}, \texttt{NOT}.
+	\item \textbf{Numerical Data Types}: \texttt{INT}, \texttt{UINT}, \texttt{DINT}, etc., with operations \texttt{ADD}, \texttt{SUB}, \texttt{DIV}, \texttt{MUL}, \texttt{LE}, \texttt{GT}, etc.
+\end{itemize}
+
+Structures, arrays, enums, and pointers are not supported!
 
 \subsection{Safety Task}
+Only one cyclic task with a specified cycle time, default 10 ms. The selected programs in the list are executed in the order of the task list. The execution order can be controlled using \texttt{Up}, \texttt{Down}, or selection (\texttt{All}, \texttt{None}).
 
-Only one cyclic task with the specified cycle time (default: 10 ms).
-
-Programs listed in the task are executed in the specified order. The execution order can be changed using Up/Down or by selecting (All/None).
-
-\section{Diagnostics}
-
+\section{Diagnosis}
 \subsection{Exchange Between Safety and Standard}
+Configuration ID via the module list of exchanged devices, \texttt{IoDrvSafetySP}. The device tree indicates whether the ID matches at the Safety Controller.
 
-Configuration ID via the module list of exchanged devices (\texttt{IoDrvSafetySP}). Display in the device tree on the safety controller shows whether the ID matches or not.
+\textbf{Note}: Changes to the PROFIsafe configuration, e.g., \texttt{F\_WD\_Time}, also require a download of the Standard. The CRC of the F-Parameters is part of the Configuration ID, and a mismatch is displayed to the user in the project tree.
 
-\textbf{Note:} Changing the PROFIsafe configuration (e.g., F\_WD\_Time) requires a standard download, as the CRC over the F-Parameters is part of the Configuration ID.
+\subsection{IO-Stack Instance}
+See online help: \url{https://content.helpme-codesys.com/en/CODESYS\%20Safety\%20Extension/sil3_field_buses.html}.
 
-\subsection*{IO Stack Instance}
-
-See online help: \url{https://content.helpme-codesys.com/en/CODESYS%20Safety%20Extension/sil3_field_buses.html}
-
-\textbf{Meaning of FB output Diagnose:}
+Meaning of the FB output Diagnosis:
 \begin{itemize}
-	\item \texttt{0x8xxx}: OK (xxx = status info)
-	\item \texttt{0xC0xx}: Initialization error (typically with log entry, application terminated)
-	\item \texttt{0xC1xx}: Own detected error
-	\item \texttt{0xC2xx}: Error detected by F-Device
+	\item \texttt{0x8xxx}: OK, with \texttt{xxx} indicating status.
+	\item \texttt{0xC0xx}: Initialization error \texttt{XX}, usually with a logbook entry, application terminated.
+	\item \texttt{0xC1xx}: Self-detected error \texttt{XX}.
+	\item \texttt{0xC2xx}: Error \texttt{XX} detected by the F-Device.
 \end{itemize}
 
 \subsubsection{PROFIsafe}
-
-Different behavior regarding FB diagnose output:
-
+Different behavior regarding FB Diagnosis Output:
 \begin{itemize}
-	\item V2.4: Diagnose word is overwritten by higher priority diagnoses (e.g., from \texttt{0xC0xx} to \texttt{0xC2xx})
-	\item V2.6: First detected error remains until it is acknowledged
+	\item \textbf{V2.4}: Diagnosis word is overwritten by higher-priority diagnosis, priority from \texttt{16\#C0xx} to \texttt{16\#C2xx}.
+	\item \textbf{V2.6}: The first detected error remains as the diagnosis word at the FB output until acknowledged.
 \end{itemize}
 
-\textbf{Note:} The F-Host only knows two errors: Timeout and CRC error. The CRC error covers all types of initialization and communication errors!
+\textbf{Product Marketing}: Set up Debian + vPLC + vSafePLC from scratch. \\
+\textbf{CODESYS Project}: For using CODESYS Safe Control – 36.
 
-PROFIsafe diagnostics on standard (Safe Control Core only): F-Host outputs are transferred to the standard controller.
+\textbf{Note}: The F-Host recognizes only two errors: Timeout or CRC error. The CRC error includes all possible variants of initialization and communication errors.
 
-\textbf{Example access:}
+PROFIsafe Diagnosis on Standard (only Safe Control Core: F-Host Outputs are transferred to Standard). Example access:
 
-\textbf{Declaration:}
+\textbf{Declaration}:
 \begin{lstlisting}
-	uiID: UDINT;
-	FHostState : ProfinetCommon.F_HostStatus;
+uiID: UDINT;
+FHostState: ProfinetCommon.F_HostStatus;
 \end{lstlisting}
 
-\textbf{Implementation:}
+\textbf{Implementation}:
 \begin{lstlisting}
-	uiID := IoDrvProfinetBase.GetID(Wago666);
-	ProfiNetCommon.GetFHostStatus(ID := uiID, F_Status:= FHostState);
+(* Next code line requires lib IoDrvProfinetBase! *)
+uiID := IoDrvProfinetBase.GetID(Wago666);
+ProfiNetCommon.GetFHostStatus(ID := uiID, F_Status := FHostState);
 \end{lstlisting}
 
-\section*{Download - Boot Application}
+\section{Download - Boot Application}
+\textbf{Note}: Handling of Download and Boot Application differs from Standard. With a logout, a running application is unloaded and no longer executed. If a Boot Application exists on the controller, it may or may not be started.
 
-\textbf{Note:} Download and boot application handling differs from standard.
+For Safety Controllers, the Login dialog requires a decision on whether to perform only a Download or a Download with Boot Application creation. Download with Boot Application combines two commands (Login and Create Boot Application), which can generally be executed independently.
 
-On logout, a running application is unloaded and no longer executed. If a boot application exists, it may or may not start!
+A Download with Boot Application takes longer since the source code is loaded to the controller twice: once for the Download and once for the Boot Application. Therefore, it is recommended to perform a Download first and create a Boot Application only when the application is stable.
 
-In the safety login dialog, it must be decided whether to perform only a download or a download and create a boot application.
+\subsection{Start of the Boot Application for SafeControl Core}
+The start of the Boot Application differs between SIL3 OEM controllers and Safe Control Core. For Safe Control Core, the user must confirm the start of the Boot Application. This is supported by the CODESYS Safe Control Lib (see Diagnosis on Standard).
 
-\textbf{Download with Boot Application} combines two commands (login and create boot application), which can also be executed separately.
+Starting from Safety Extension 4.3.0.0, the status is displayed in the project tree and the active application status (see screenshot). For Safety Extension versions earlier than 4.3.0.0, no display is available in either the tree or the status, and both fields are empty.
 
-\textbf{Recommendation:} First do a normal download. Only when the application is stable should a boot application be created.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{25.JPG}
+\end{figure}
 
-\subsection{Starting Boot Application for SafeControl Core}
+\section{Diagnosis on Standard}
+The CODESYS Safe Control Service Package includes the \texttt{CODESYS Safe Control} library, providing the following function blocks (FBs):
 
-For Safe Control Core, the user must confirm the start. This requires the \texttt{CODESYS Safe Control Lib} (see diagnostics).
-
-From Safety Extension 4.3.0.0, the state is shown in the project tree and the application status.
-
-Older versions (< 4.3.0.0) do not show this status.
-
-\section{Diagnostics on Standard}
-
-CODESYS Safe Control Service Package with \texttt{CODESYS Safe Control Lib}:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{26.JPG}
+\end{figure}
 
 \begin{itemize}
-	\item \texttt{FB SafeDevice}: Device information and diagnostics
-	\item \texttt{FB SafeApplication}: Information on loaded application and boot app status
-	\item \texttt{FB StartBootApp}: Confirms boot application start (status displayed in tree from 4.3.0.0)
+	\item \textbf{FB SafeDevice}: Provides information and diagnostics about the device. \textbf{Note}: Information regarding external timers is currently not meaningfully usable (see Jira SIL3SL-725).
+	\item \textbf{FB SafeApplication}: Provides information about the loaded application or the start of the Boot Application.
+	\item \textbf{FB StartBootApp}: FB for confirming the start of the loaded Boot Application. Starting from Safety Extension 4.3.0.0, this additional state is displayed in the project tree and in the status of the active application. For versions earlier than 4.2.0.0, no application status is displayed.
 \end{itemize}
 
-To start the boot application:
+To start the Boot Application, the current value of the FB output \texttt{SafeApplication.BootAppConfirmation} must be specified, along with a Client ID defined in the runtime's CFG file. The default for the Standard Application is \texttt{16\#ED387206}.
 
-\begin{itemize}
-	\item Read \texttt{SafeApplication.BootAppConfirmation}
-	\item Provide a ClientID (in the CFG file of the runtime, default: \texttt{16\#ED387206})
-\end{itemize}
+\textbf{Product Marketing}: Set up Debian + vPLC + vSafePLC from scratch. \\
+\textbf{CODESYS Project}: For using CODESYS Safe Control – 38.
 
-\textbf{Example Implementation:}
+\textbf{ApplicationId}: Starting from version 4.3.0.0, available via the command \texttt{Build $\rightarrow$ Show Details about Active Safety Application}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{27.JPG}
+\end{figure}
+
+\textbf{Example Implementation for Boot Application Start Confirmation}:
+
+\textbf{Declaration}:
 \begin{lstlisting}
-	PROGRAM StartSafetyBA
-	VAR
-	xStartBA : BOOL := FALSE;
-	xRestart : BOOL := FALSE;
-	fbSafeApp : SafeControl.SafeApplication;
-	fbSafeDev : SafeControl.SafeDevice;
-	fbStartBA : SafeControl.StartBootApp;
-	fbRestart: SafeControl.RestartBootApp;
-	END_VAR
-	
-	VAR CONSTANT
-	c_udnClientId : UDINT := 16#ED387206; // Client ID of standard PLC
-	END_VAR
-	
-	fbSafeApp(xEnable := TRUE);
-	fbSafeDev(xEnable := TRUE);
-	fbStartBA(xExecute := (fbSafeApp.xBootAppConfirmationRequested AND xStartBA),
-	szSafetyDeviceFirmware := fbSafeDev.szSafetyDeviceFirmware,
-	udnAppId := fbSafeApp.AppInfo.udnAppId,
-	udnClientId := c_udnClientId,
-	BootAppConfirmation := fbSafeApp.BootAppConfirmation);
-	
-	fbRestart(xExecute := xRestart);
+PROGRAM StartSafetyBA
+VAR
+xStartBA : BOOL := FALSE;
+xRestart : BOOL := FALSE;
+
+fbSafeApp : SafeControl.SafeApplication;
+fbSafeDev : SafeControl.SafeDevice;
+
+fbStartBA : SafeControl.StartBootApp;
+
+fbRestart: SafeControl.RestartBootApp;
+
+END_VAR
+VAR CONSTANT
+c_udnClientId : UDINT := 16#ED387206;     // The given client id of PLC
+END_VAR
 \end{lstlisting}
+
+\textbf{Implementation}:
+\begin{lstlisting}
+fbSafeApp(xEnable := TRUE);
+fbSafeDev(xEnable := TRUE);
+fbStartBA(xExecute := (fbSafeApp.xBootAppConfirmationRequested AND xStartBA), 
+szSafetyDeviceFirmware := fbSafeDev.szSafetyDeviceFirmware, 
+udnAppId := fbSafeApp.AppInfo.udnAppId, 
+udnClientId := c_udnClientId,
+BootAppConfirmation := fbSafeApp.BootAppConfirmation);
+// For automatic test execution FB with the restart of the bootapplication is also implemented
+fbRestart(xExecute := xRestart);
+\end{lstlisting}
+
+
 
 \section{Debugging}
-
-Only online commands are supported: Start, Stop, Write, and Force. Forcing is limited to 20 entries.
+Only online commands are supported: \texttt{Start}, \texttt{Stop}, \texttt{Write}, and \texttt{Force}. Forcing is limited to a maximum of 20 entries.
 
 \section{Device Editors}
 \begin{itemize}
@@ -1085,17 +1099,14 @@ Only online commands are supported: Start, Stop, Write, and Force. Forcing is li
 	\item Information
 \end{itemize}
 
-\section*{Further Limitations}
+\section{Additional Restrictions}
+\textbf{Lib-Manager}: Users cannot develop libraries; this is not supported. Currently, only libraries with external FBs are available.
 
-Library Manager: Users cannot develop their own libraries. Only libraries with external FBs are currently supported.
-
-\subsection{Additional Links}
+\subsection{Further Links}
 \begin{itemize}
-	\item Online help for Virtual Safe Control: \url{https://content.helpme-codesys.com/de/CODESYS%20Control/_rtsl_scenario_safe_house.html}
-	\item Docker installation: \url{https://docs.docker.com/engine/install/debian/}
+	\item Online Help for Virtual Safe Control: \url{https://content.helpme-codesys.com/de/CODESYS%20Control/_rtsl_scenario_safe_house.html}
+	\item Docker Installation: \url{https://docs.docker.com/engine/install/debian/}
 \end{itemize}
-
-
 
 
 
