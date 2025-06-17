@@ -1,0 +1,63 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{4}{}%
+\contentsline {section}{\numberline {2}Hardware Requirements}{4}{}%
+\contentsline {section}{\numberline {3}Debian Installation}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Preparing the Installation Medium}{4}{}%
+\contentsline {subsection}{\numberline {3.2}BIOS Configuration and Starting the Installer}{4}{}%
+\contentsline {subsection}{\numberline {3.3}Performing the Installation}{4}{}%
+\contentsline {subsection}{\numberline {3.4}Partitioning the Hard Drive}{5}{}%
+\contentsline {subsection}{\numberline {3.5}Mirror Selection}{5}{}%
+\contentsline {subsection}{\numberline {3.6}Software Selection}{5}{}%
+\contentsline {subsection}{\numberline {3.7}Reboot and First Steps}{5}{}%
+\contentsline {subsection}{\numberline {3.8}Creating a SUDO User}{5}{}%
+\contentsline {subsection}{\numberline {3.9}SSH Configuration}{5}{}%
+\contentsline {subsection}{\numberline {3.10}Logging Out the ROOT User}{6}{}%
+\contentsline {subsection}{\numberline {3.11}Installing Python 3}{6}{}%
+\contentsline {subsection}{\numberline {3.12}SSH Connection and Docker Installation}{6}{}%
+\contentsline {section}{\numberline {4}Making Debian Real-Time Capable}{7}{}%
+\contentsline {section}{\numberline {5}For Native Linux SL Installation (a SoftSPS)}{9}{}%
+\contentsline {subsection}{\numberline {5.1}For Running Multiple Controllers with a Container Engine (e.g. Docker)}{9}{}%
+\contentsline {subsection}{\numberline {5.2}For Safety Features with CODESYS}{9}{}%
+\contentsline {section}{\numberline {6}Software Requirements of the Host Device}{10}{}%
+\contentsline {section}{\numberline {7}Network Configuration}{11}{}%
+\contentsline {section}{\numberline {8}Installing Runtime Systems}{12}{}%
+\contentsline {section}{\numberline {9}Deployment to use Control Linux SL (without Docker)}{12}{}%
+\contentsline {section}{\numberline {10}Installing CODESYS Virtual Control for Linux SL}{13}{}%
+\contentsline {subsection}{\numberline {10.1}Deployment Overview (Using Docker Containers)}{13}{}%
+\contentsline {section}{\numberline {11}CODESYS Project for Using CODESYS Safe Control}{17}{}%
+\contentsline {subsection}{\numberline {11.1}Importing Devices}{17}{}%
+\contentsline {subsection}{\numberline {11.2}Creating a New Project}{17}{}%
+\contentsline {subsection}{\numberline {11.3}Project Tree Overview}{18}{}%
+\contentsline {subsection}{\numberline {11.4}Communication with Linux Runtime Systems}{19}{}%
+\contentsline {subsection}{\numberline {11.5}Installing a Safe Timeprovider}{20}{}%
+\contentsline {paragraph}{Same-Device Configuration:}{20}{}%
+\contentsline {paragraph}{Two-Device Configuration:}{21}{}%
+\contentsline {paragraph}{Changing the Time Cycle:}{21}{}%
+\contentsline {subsection}{\numberline {11.6}Example: Adding a Safe Application Program}{21}{}%
+\contentsline {subsection}{\numberline {11.7}Location of the Configuration File and Client ID for Safety Runtime}{31}{}%
+\contentsline {subsection}{\numberline {11.8}Renaming the Safe Control Device}{32}{}%
+\contentsline {section}{\numberline {12}Logical Devices}{33}{}%
+\contentsline {subsection}{\numberline {12.1}Data Exchange Between Safety and Standard Controller}{33}{}%
+\contentsline {subsection}{\numberline {12.2}Exchange Fieldbus with Safe I/Os}{34}{}%
+\contentsline {subsection}{\numberline {12.3}PROFIsafe}{36}{}%
+\contentsline {subsection}{\numberline {12.4}Safety Application}{36}{}%
+\contentsline {subsection}{\numberline {12.5}Global Variable List (GVL)}{36}{}%
+\contentsline {subsection}{\numberline {12.6}IO Mapping}{36}{}%
+\contentsline {subsection}{\numberline {12.7}IO Configuration (F-Parameter)}{36}{}%
+\contentsline {subsection}{\numberline {12.8}POU, FB}{37}{}%
+\contentsline {subsection}{\numberline {12.9}Safety Task}{37}{}%
+\contentsline {section}{\numberline {13}Diagnosis}{37}{}%
+\contentsline {subsection}{\numberline {13.1}Exchange Between Safety and Standard}{37}{}%
+\contentsline {subsection}{\numberline {13.2}IO-Stack Instance}{37}{}%
+\contentsline {subsubsection}{\numberline {13.2.1}PROFIsafe}{38}{}%
+\contentsline {section}{\numberline {14}Download - Boot Application}{38}{}%
+\contentsline {subsection}{\numberline {14.1}Start of the Boot Application for SafeControl Core}{38}{}%
+\contentsline {section}{\numberline {15}Diagnosis on Standard}{39}{}%
+\contentsline {section}{\numberline {16}Debugging}{41}{}%
+\contentsline {section}{\numberline {17}Device Editors}{41}{}%
+\contentsline {section}{\numberline {18}Additional Restrictions}{41}{}%
+\contentsline {subsection}{\numberline {18.1}Further Links}{41}{}%
+\contentsline {section}{\numberline {19}Use Case: Virtual Safe Emergency Stop}{42}{}%
+\contentsline {subsection}{\numberline {19.1}Opening the Project}{42}{}%
+\contentsline {subsection}{\numberline {19.2}Handling Version Compatibility Issues}{44}{}%
+\contentsline {subsection}{\numberline {19.3}Testing the Emergency Stop}{45}{}%

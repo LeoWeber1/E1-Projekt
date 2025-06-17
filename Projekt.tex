@@ -653,6 +653,7 @@ A variable named \texttt{counter} can be added to one input. The second summand 
 	\centering
 	\includegraphics[width=0.8\textwidth]{e4.JPG}
 \end{figure}
+\label{sec:safe-pou-changes}
 % Highlighting changes in a Safe POU
 Changes in a Safe POU are marked in red, and this does not indicate an error.
 % Adding and deleting a network to clear the red highlight
@@ -1107,6 +1108,77 @@ Only online commands are supported: \texttt{Start}, \texttt{Stop}, \texttt{Write
 	\item Online Help for Virtual Safe Control: \url{https://content.helpme-codesys.com/de/CODESYS%20Control/_rtsl_scenario_safe_house.html}
 	\item Docker Installation: \url{https://docs.docker.com/engine/install/debian/}
 \end{itemize}
+
+\newpage
+\section{Use Case: Virtual Safe Emergency Stop}
+
+\subsection{Opening the Project}
+
+To begin, open the project \textbf{vSafeTest\_sim}, located in the appendix.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{c1.JPG}
+\end{figure}
+
+After a brief loading period, a project environment popup will appear. Click \textbf{OK} in the bottom-right corner to continue.
+
+Once the project has fully loaded, navigate to the \textbf{Application} section under \textbf{Device}, and click \textbf{Login} to establish a connection with the device.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{c2.JPG}
+\end{figure}
+
+The \textbf{VGateway} should already be pre-selected. Use the same login credentials as previously used. For detailed information on logging into the Safe POU, refer to Section~\ref{sec:safe-pou-changes}.
+
+Next, log into the Safe Control by right-clicking on \textbf{SafetyApp} and selecting \textbf{Login}. This action establishes the connection to both the standard and safe systems.
+
+Once the connection is successful, both devices will show green status indicators. Additionally, the central status bar will display \textbf{RUN} in green and \textbf{SAFE} in yellow. The device icons on the right-hand side of the screen will also appear green.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{c3.PNG}
+\end{figure}
+
+\subsection{Handling Version Compatibility Issues}
+
+If you encounter version compatibility issues, right-click on the affected device and select \textbf{Update Device}. A popup window will appear, allowing you to choose the correct version. For this project, select \textbf{Linux SL 4.15.0.0}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{c4.jpg}
+\end{figure}
+
+To update the Safe Control version, select \textbf{CODESYS Safe Control}, click \textbf{Update Device}, and choose the appropriate version number—again, \textbf{4.15.0.0}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{c5.jpg}
+\end{figure}
+
+\subsection{Testing the Emergency Stop}
+
+To test the emergency stop (\textit{Not-Aus}), open the \textbf{Visualization} view. Toggle the switch labeled \textbf{Logical GVL Safe Out} to simulate an emergency stop. When the lever is flipped, the LED on the \textbf{EStop} indicator should turn on.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{c6.jpg}
+		\caption*{Flip the lever}
+	\end{minipage}
+	\hspace{0.02\textwidth}
+	{\Huge$\Rightarrow$}
+	\hspace{0.02\textwidth}
+	\begin{minipage}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{c7.jpg}
+		\caption*{EStop LED lights up}
+	\end{minipage}
+\end{figure}
+
+This confirms that the emergency stop simulation was triggered correctly and that both the visual feedback and system response function as intended. With this, the setup and validation of the virtual safety mechanism are complete.
 
 
 
