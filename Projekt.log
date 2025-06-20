@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.6)  17 JUN 2025 20:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.6)  20 JUN 2025 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -373,15 +373,15 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidthfirst=\dimen178
 )
 LaTeX Font Info:    Trying to load font information for T1+Roboto-LF on input l
-ine 60.
+ine 55.
 
 (C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/roboto\t1roboto-lf.fd
 File: T1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for T1/Roboto-LF.
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/l/n' aliased to
-(Font)              `T1/Roboto-LF/light/n' on input line 60.
+(Font)              `T1/Roboto-LF/light/n' on input line 55.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/light/n' will be
-(Font)              scaled to size 12.0pt on input line 60.
+(Font)              scaled to size 12.0pt on input line 55.
 
 (C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
@@ -391,20 +391,20 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (Projekt.aux)
 \openout1 = `Projekt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 \c@mv@tabular=\count296
 \c@mv@boldtabular=\count297
 
@@ -476,238 +476,237 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/l/n' aliased to
 (Font)              `T1/Roboto-LF/light/n' on input line 62.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/light/n' will be
-(Font)              scaled to size 20.74pt on input line 62.
+(Font)              scaled to size 24.88pt on input line 62.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 (Font)              `T1/Roboto-LF/bold/n' on input line 62.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 20.74pt on input line 62.
+(Font)              scaled to size 24.88pt on input line 62.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/l/n' aliased to
-(Font)              `T1/Roboto-LF/light/n' on input line 62.
+(Font)              `T1/Roboto-LF/light/n' on input line 63.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/light/n' will be
-(Font)              scaled to size 14.4pt on input line 62.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
-
- (C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
-
-
-(C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+(Font)              scaled to size 17.28pt on input line 63.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/l/n' aliased to
+(Font)              `T1/Roboto-LF/light/n' on input line 67.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/light/n' will be
+(Font)              scaled to size 14.4pt on input line 67.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
+(Font)              `T1/Roboto-LF/bold/n' on input line 71.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
+(Font)              scaled to size 14.4pt on input line 71.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
+7.
+ (C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 [1
 
 {C:/Users/leopo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/leop
 o/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/roboto/rbto_b5rac7.enc}]
-LaTeX Font Info:    Font shape `T1/Roboto-LF/l/n' aliased to
-(Font)              `T1/Roboto-LF/light/n' on input line 65.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/light/n' will be
-(Font)              scaled to size 17.28pt on input line 65.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 65.
+(Font)              `T1/Roboto-LF/bold/n' on input line 94.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 17.28pt on input line 65.
+(Font)              scaled to size 17.28pt on input line 94.
 
 (Projekt.toc
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
 (Font)              `T1/Roboto-LF/bold/n' on input line 2.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
 (Font)              scaled to size 12.0pt on input line 2.
- [2
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[1
 
 ])
 \tf@toc=\write3
 \openout3 = `Projekt.toc'.
 
- [3]
+ [2]
+LaTeX Font Info:    Font shape `T1/Roboto-LF/l/it' aliased to
+(Font)              `T1/Roboto-LF/light/it' on input line 118.
+LaTeX Font Info:    Font shape `T1/Roboto-LF/light/it' will be
+(Font)              scaled to size 12.0pt on input line 118.
 LaTeX Font Info:    Trying to load font information for TS1+Roboto-LF on input 
-line 74.
+line 123.
 
 (C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/roboto\ts1roboto-lf.fd
 File: TS1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for TS1/Roboto-LF.
 
 )
 LaTeX Font Info:    Font shape `TS1/Roboto-LF/l/n' aliased to
-(Font)              `TS1/Roboto-LF/light/n' on input line 74.
+(Font)              `TS1/Roboto-LF/light/n' on input line 123.
 LaTeX Font Info:    Font shape `TS1/Roboto-LF/light/n' will be
-(Font)              scaled to size 12.0pt on input line 74.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 83.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 14.4pt on input line 83.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
-5.
-(C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-[4
+(Font)              scaled to size 12.0pt on input line 123.
+[3
 
 {C:/Users/leopo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/roboto/rbto_ocbbs
 b.enc}]
-LaTeX Font Info:    Font shape `T1/Roboto-LF/l/n' aliased to
-(Font)              `T1/Roboto-LF/light/n' on input line 159.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/light/n' will be
-(Font)              scaled to size 10.95pt on input line 159.
- [5]
-Overfull \hbox (20.35103pt too wide) in paragraph at lines 181--182
+<./assets/28.jpg, id=19, 512.66531pt x 452.4403pt>
+File: ./assets/28.jpg Graphic file (type jpg)
+<use ./assets/28.jpg>
+Package pdftex.def Info: ./assets/28.jpg  used on input line 149.
+(pdftex.def)             Requested size: 364.19667pt x 321.41437pt.
+
+Overfull \hbox (8.22913pt too wide) in paragraph at lines 158--159
+[]\T1/Roboto-LF/bold/n/12 64-bit CPU (AMD64 ar-chi-tec-ture)\T1/Roboto-LF/light
+/n/12 : Re-quired for com-pat-i-bil-ity with mod-ern CODESYS
+ []
+
+[4 <./assets/28.jpg>]
+Overfull \hbox (7.10158pt too wide) in paragraph at lines 181--183
+\T1/Roboto-LF/light/n/12 and setup: $\T1/cmtt/m/n/12 https : / / content . help
+mecodesys . com / de / CODESYS % 20Control / _rtsl _
+ []
+
+[5] [6]
+Overfull \hbox (20.35103pt too wide) in paragraph at lines 317--318
 []\T1/Roboto-LF/light/n/12 Follow the link to in-stall Docker: $\T1/cmtt/m/n/12
  https : / / docs . docker . com / engine / install / debian/$ 
  []
 
-[6]
-LaTeX Font Info:    Font shape `T1/Roboto-LF/l/it' aliased to
-(Font)              `T1/Roboto-LF/light/it' on input line 234.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/light/it' will be
-(Font)              scaled to size 12.0pt on input line 234.
+[7] [8]
 LaTeX Font Info:    Font shape `TS1/Roboto-LF/l/it' aliased to
-(Font)              `TS1/Roboto-LF/light/it' on input line 240.
+(Font)              `TS1/Roboto-LF/light/it' on input line 376.
 LaTeX Font Info:    Font shape `TS1/Roboto-LF/light/it' will be
-(Font)              scaled to size 12.0pt on input line 240.
- [7]
-Overfull \hbox (11.84103pt too wide) in paragraph at lines 253--254
+(Font)              scaled to size 12.0pt on input line 376.
+ [9]
+Overfull \hbox (11.84103pt too wide) in paragraph at lines 389--390
 []\T1/cmtt/m/n/12 intel_pstate=disable, noht, processor.max_cstate=0 \T1/Roboto
 -LF/light/n/12 ^^U Rel-e-vant for In-tel CPUs
  []
 
-[8]
-<./assets/1.jpg, id=36, 1744.5175pt x 983.675pt>
+[10]
+<./assets/29.jpg, id=46, 109.91063pt x 27.10126pt>
+File: ./assets/29.jpg Graphic file (type jpg)
+<use ./assets/29.jpg>
+Package pdftex.def Info: ./assets/29.jpg  used on input line 397.
+(pdftex.def)             Requested size: 77.39066pt x 19.08322pt.
+<./assets/1.jpg, id=47, 1744.5175pt x 983.675pt>
 File: ./assets/1.jpg Graphic file (type jpg)
 <use ./assets/1.jpg>
-Package pdftex.def Info: ./assets/1.jpg  used on input line 265.
+Package pdftex.def Info: ./assets/1.jpg  used on input line 401.
 (pdftex.def)             Requested size: 455.24411pt x 256.69507pt.
 
-Overfull \hbox (22.51595pt too wide) in paragraph at lines 279--279
+Overfull \hbox (22.51595pt too wide) in paragraph at lines 415--415
 |[]\T1/Roboto-LF/bold/n/14.4 For Run-ning Mul-ti-ple Con-trollers with a Con-ta
 iner En-gine (e.g. Docker)| 
  []
 
-[9 <./assets/1.jpg>]
-Overfull \hbox (4.83536pt too wide) in paragraph at lines 299--300
-\T1/Roboto-LF/light/n/12 The host de-vice must cur-rently meet the fol-low-ing 
-soft-ware re-quire-ments to en-sure proper
- []
-
-
-Overfull \hbox (6.40009pt too wide) in paragraph at lines 305--306
-\T1/Roboto-LF/light/n/12 specif-i-cally for us-ing \T1/cmtt/m/n/12 CODESYS Cont
-rol for Linux SL - AMD64 \T1/Roboto-LF/light/n/12 in com-bi-na-tion with
- []
-
-
-Overfull \hbox (24.79553pt too wide) in paragraph at lines 328--329
-[]$\T1/cmtt/m/n/12 https : / / content . helpmecodesys . com / de / CODESYS % 2
-0Control / _rtsl _ performance _
- []
-
-[10]
-<./assets/2.jpg, id=43, 2185.16376pt x 1223.57124pt>
-File: ./assets/2.jpg Graphic file (type jpg)
-<use ./assets/2.jpg>
-Package pdftex.def Info: ./assets/2.jpg  used on input line 338.
+[11 <./assets/29.jpg> <./assets/1.jpg>] [12]
+<./assets/2n.png, id=55, 2185.16376pt x 1223.57124pt>
+File: ./assets/2n.png Graphic file (type png)
+<use ./assets/2n.png>
+Package pdftex.def Info: ./assets/2n.png  used on input line 443.
 (pdftex.def)             Requested size: 455.24411pt x 254.90382pt.
- [11 <./assets/2.jpg>]
+ [13 <./assets/2n.png>]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-368.
+475.
 
 (C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Overfull \hbox (16.43031pt too wide) in paragraph at lines 366--369
+Overfull \hbox (16.43031pt too wide) in paragraph at lines 473--476
 \T1/Roboto-LF/light/n/12 Nav-i-gate to: \T1/cmtt/m/n/12 Tools \TS1/cmtt/m/n/12 
 ^^Y \T1/cmtt/m/n/12 Deploy Control SL \TS1/cmtt/m/n/12 ^^Y \T1/cmtt/m/n/12 Conn
 ect to the Linux target system via
  []
 
-<./assets/3.jpg, id=47, 490.83376pt x 175.40532pt>
+<./assets/3.jpg, id=61, 490.83376pt x 175.40532pt>
 File: ./assets/3.jpg Graphic file (type jpg)
 <use ./assets/3.jpg>
-Package pdftex.def Info: ./assets/3.jpg  used on input line 376.
+Package pdftex.def Info: ./assets/3.jpg  used on input line 483.
 (pdftex.def)             Requested size: 455.24411pt x 162.69165pt.
-<./assets/4.jpg, id=48, 382.42876pt x 103.13531pt>
+<./assets/4.jpg, id=62, 382.42876pt x 103.13531pt>
 File: ./assets/4.jpg Graphic file (type jpg)
 <use ./assets/4.jpg>
-Package pdftex.def Info: ./assets/4.jpg  used on input line 387.
+Package pdftex.def Info: ./assets/4.jpg  used on input line 494.
 (pdftex.def)             Requested size: 455.24411pt x 122.77815pt.
-[12 <./assets/3.jpg> <./assets/4.jpg>]
-Overfull \hbox (4.68092pt too wide) in paragraph at lines 409--411
+[14 <./assets/3.jpg> <./assets/4.jpg>]
+Overfull \hbox (4.68092pt too wide) in paragraph at lines 516--518
 []\T1/Roboto-LF/light/n/12 Refer to the of-fi-cial CODESYS doc-u-men-ta-tion fo
 r back-ground: $\T1/cmtt/m/n/12 https : / / content . helpme -[]
  []
 
-<./assets/5.PNG, id=53, 1236.7634pt x 492.12428pt>
+<./assets/5.PNG, id=67, 1236.7634pt x 492.12428pt>
 File: ./assets/5.PNG Graphic file (type png)
 <use ./assets/5.PNG>
-Package pdftex.def Info: ./assets/5.PNG  used on input line 433.
+Package pdftex.def Info: ./assets/5.PNG  used on input line 540.
 (pdftex.def)             Requested size: 455.24411pt x 181.14447pt.
-[13]
-<./assets/6.PNG, id=59, 1238.05392pt x 492.98465pt>
+[15]
+<./assets/6.PNG, id=71, 1238.05392pt x 492.98465pt>
 File: ./assets/6.PNG Graphic file (type png)
 <use ./assets/6.PNG>
-Package pdftex.def Info: ./assets/6.PNG  used on input line 466.
+Package pdftex.def Info: ./assets/6.PNG  used on input line 573.
 (pdftex.def)             Requested size: 455.24411pt x 181.2731pt.
- [14 <./assets/5.PNG>]
-<./assets/7.PNG, id=64, 1238.05392pt x 493.845pt>
+ [16 <./assets/5.PNG>]
+<./assets/7.PNG, id=76, 1238.05392pt x 493.845pt>
 File: ./assets/7.PNG Graphic file (type png)
 <use ./assets/7.PNG>
-Package pdftex.def Info: ./assets/7.PNG  used on input line 472.
+Package pdftex.def Info: ./assets/7.PNG  used on input line 579.
 (pdftex.def)             Requested size: 455.24411pt x 181.58946pt.
-<./assets/8.PNG, id=65, 1238.05392pt x 492.12428pt>
+<./assets/8.PNG, id=77, 1238.05392pt x 492.12428pt>
 File: ./assets/8.PNG Graphic file (type png)
 <use ./assets/8.PNG>
-Package pdftex.def Info: ./assets/8.PNG  used on input line 478.
+Package pdftex.def Info: ./assets/8.PNG  used on input line 585.
 (pdftex.def)             Requested size: 455.24411pt x 180.95674pt.
- [15 <./assets/6.PNG> <./assets/7.PNG> <./assets/8.PNG>] [16]
-<./assets/9.JPG, id=75, 443.40656pt x 241.65282pt>
+ [17 <./assets/6.PNG> <./assets/7.PNG> <./assets/8.PNG>] [18]
+<./assets/9.JPG, id=88, 443.40656pt x 241.65282pt>
 File: ./assets/9.JPG Graphic file (type jpg)
 <use ./assets/9.JPG>
-Package pdftex.def Info: ./assets/9.JPG  used on input line 510.
+Package pdftex.def Info: ./assets/9.JPG  used on input line 617.
 (pdftex.def)             Requested size: 364.19667pt x 198.49582pt.
 
-Overfull \hbox (9.01872pt too wide) in paragraph at lines 520--523
+Overfull \hbox (9.01872pt too wide) in paragraph at lines 627--630
 \T1/Roboto-LF/light/it/12 Stan-dard Project\T1/Roboto-LF/light/n/12 , se-lect t
 he fol-low-ing de-vice: \T1/cmtt/m/n/12 CODESYS Control for Linux SL (CODESYS) 
 
  []
 
-<./assets/10.JPG, id=76, 431.36156pt x 243.91125pt>
+<./assets/10.JPG, id=89, 431.36156pt x 243.91125pt>
 File: ./assets/10.JPG Graphic file (type jpg)
 <use ./assets/10.JPG>
-Package pdftex.def Info: ./assets/10.JPG  used on input line 526.
+Package pdftex.def Info: ./assets/10.JPG  used on input line 633.
 (pdftex.def)             Requested size: 364.19667pt x 205.94102pt.
-[17 <./assets/9.JPG>]
-<./assets/11.JPG, id=80, 304.13625pt x 387.69844pt>
+[19 <./assets/9.JPG>]
+<./assets/11.JPG, id=93, 304.13625pt x 387.69844pt>
 File: ./assets/11.JPG Graphic file (type jpg)
 <use ./assets/11.JPG>
-Package pdftex.def Info: ./assets/11.JPG  used on input line 535.
+Package pdftex.def Info: ./assets/11.JPG  used on input line 642.
 (pdftex.def)             Requested size: 273.14923pt x 348.20955pt.
- [18 <./assets/10.JPG> <./assets/11.JPG>]
-<./assets/12.JPG, id=84, 249.93375pt x 246.9225pt>
+ [20 <./assets/10.JPG> <./assets/11.JPG>]
+<./assets/12.JPG, id=97, 249.93375pt x 246.9225pt>
 File: ./assets/12.JPG Graphic file (type jpg)
 <use ./assets/12.JPG>
-Package pdftex.def Info: ./assets/12.JPG  used on input line 551.
+Package pdftex.def Info: ./assets/12.JPG  used on input line 658.
 (pdftex.def)             Requested size: 227.62206pt x 224.88818pt.
 
-Overfull \hbox (6.20346pt too wide) in paragraph at lines 554--555
+Overfull \hbox (6.20346pt too wide) in paragraph at lines 661--662
 []\T1/Roboto-LF/light/n/12 These com-po-nents pro-vide the foun-da-tion for de-
 vel-op-ing and man-ag-ing the safety-related
  []
 
-<./assets/gateway.png, id=85, 1238.05392pt x 492.98465pt>
+<./assets/gateway.png, id=98, 1238.05392pt x 492.98465pt>
 File: ./assets/gateway.png Graphic file (type png)
 <use ./assets/gateway.png>
-Package pdftex.def Info: ./assets/gateway.png  used on input line 562.
+Package pdftex.def Info: ./assets/gateway.png  used on input line 669.
 (pdftex.def)             Requested size: 455.24411pt x 181.2731pt.
-[19 <./assets/12.JPG> <./assets/gateway.png>]
-Overfull \hbox (17.62927pt too wide) in paragraph at lines 568--569
+[21 <./assets/12.JPG> <./assets/gateway.png>]
+Overfull \hbox (17.62927pt too wide) in paragraph at lines 675--676
 []$\T1/cmtt/m/n/12 https : / / content . helpme -[] codesys . com / en / CODESY
 S % 20Control / _rtsl _ load _
  []
 
-<./assets/14.JPG, id=91, 495.35063pt x 232.61906pt>
+<./assets/14.JPG, id=103, 495.35063pt x 232.61906pt>
 File: ./assets/14.JPG Graphic file (type jpg)
 <use ./assets/14.JPG>
-Package pdftex.def Info: ./assets/14.JPG  used on input line 598.
+Package pdftex.def Info: ./assets/14.JPG  used on input line 705.
 (pdftex.def)             Requested size: 455.24411pt x 213.78496pt.
 (C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
@@ -715,321 +714,306 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 (C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-[20 <./assets/14.JPG>]
+[22 <./assets/14.JPG>]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 605.
-<./assets/15.JPG, id=95, 532.99126pt x 207.02344pt>
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 712.
+<./assets/15.JPG, id=107, 532.99126pt x 207.02344pt>
 File: ./assets/15.JPG Graphic file (type jpg)
 <use ./assets/15.JPG>
-Package pdftex.def Info: ./assets/15.JPG  used on input line 612.
+Package pdftex.def Info: ./assets/15.JPG  used on input line 719.
 (pdftex.def)             Requested size: 455.24411pt x 176.82996pt.
-<./assets/e1.JPG, id=96, 589.4522pt x 545.78906pt>
+<./assets/e1.JPG, id=108, 589.4522pt x 545.78906pt>
 File: ./assets/e1.JPG Graphic file (type jpg)
 <use ./assets/e1.JPG>
-Package pdftex.def Info: ./assets/e1.JPG  used on input line 633.
+Package pdftex.def Info: ./assets/e1.JPG  used on input line 740.
 (pdftex.def)             Requested size: 227.62206pt x 210.7582pt.
- [21 <./assets/15.JPG>]
-<./assets/e2.JPG, id=100, 373.395pt x 537.50812pt>
+ [23 <./assets/15.JPG>]
+<./assets/e2.JPG, id=112, 373.395pt x 537.50812pt>
 File: ./assets/e2.JPG Graphic file (type jpg)
 <use ./assets/e2.JPG>
-Package pdftex.def Info: ./assets/e2.JPG  used on input line 641.
+Package pdftex.def Info: ./assets/e2.JPG  used on input line 748.
 (pdftex.def)             Requested size: 182.09486pt x 262.12642pt.
-<./assets/e3.JPG, id=101, 573.64313pt x 240.9pt>
+<./assets/e3.JPG, id=113, 573.64313pt x 240.9pt>
 File: ./assets/e3.JPG Graphic file (type jpg)
 <use ./assets/e3.JPG>
-Package pdftex.def Info: ./assets/e3.JPG  used on input line 648.
+Package pdftex.def Info: ./assets/e3.JPG  used on input line 755.
 (pdftex.def)             Requested size: 455.24411pt x 191.18375pt.
- [22 <./assets/e1.JPG> <./assets/e2.JPG>]
-<./assets/e4.JPG, id=105, 577.40718pt x 349.305pt>
+ [24 <./assets/e1.JPG> <./assets/e2.JPG>]
+<./assets/e4.JPG, id=118, 577.40718pt x 349.305pt>
 File: ./assets/e4.JPG Graphic file (type jpg)
 <use ./assets/e4.JPG>
-Package pdftex.def Info: ./assets/e4.JPG  used on input line 654.
+Package pdftex.def Info: ./assets/e4.JPG  used on input line 761.
 (pdftex.def)             Requested size: 364.19667pt x 220.3298pt.
-<./assets/e5.JPG, id=106, 861.2175pt x 358.33875pt>
+<./assets/e5.JPG, id=119, 861.2175pt x 358.33875pt>
 File: ./assets/e5.JPG Graphic file (type jpg)
 <use ./assets/e5.JPG>
-Package pdftex.def Info: ./assets/e5.JPG  used on input line 663.
+Package pdftex.def Info: ./assets/e5.JPG  used on input line 770.
 (pdftex.def)             Requested size: 455.24411pt x 189.42107pt.
- [23 <./assets/e3.JPG> <./assets/e4.JPG>]
-<./assets/e6.JPG, id=110, 729.47531pt x 219.06844pt>
+ [25 <./assets/e3.JPG> <./assets/e4.JPG>]
+<./assets/e6.JPG, id=123, 729.47531pt x 219.06844pt>
 File: ./assets/e6.JPG Graphic file (type jpg)
 <use ./assets/e6.JPG>
-Package pdftex.def Info: ./assets/e6.JPG  used on input line 669.
+Package pdftex.def Info: ./assets/e6.JPG  used on input line 776.
 (pdftex.def)             Requested size: 455.24411pt x 136.71352pt.
-<./assets/e7.JPG, id=111, 681.29532pt x 216.81pt>
+<./assets/e7.JPG, id=124, 681.29532pt x 216.81pt>
 File: ./assets/e7.JPG Graphic file (type jpg)
 <use ./assets/e7.JPG>
-Package pdftex.def Info: ./assets/e7.JPG  used on input line 675.
+Package pdftex.def Info: ./assets/e7.JPG  used on input line 782.
 (pdftex.def)             Requested size: 455.24411pt x 144.87488pt.
-<./assets/e8.JPG, id=112, 927.465pt x 295.85532pt>
+<./assets/e8.JPG, id=125, 927.465pt x 295.85532pt>
 File: ./assets/e8.JPG Graphic file (type jpg)
 <use ./assets/e8.JPG>
-Package pdftex.def Info: ./assets/e8.JPG  used on input line 683.
+Package pdftex.def Info: ./assets/e8.JPG  used on input line 790.
 (pdftex.def)             Requested size: 455.24411pt x 145.22318pt.
- [24 <./assets/e5.JPG> <./assets/e6.JPG> <./assets/e7.JPG>]
-<./assets/e9.JPG, id=116, 592.46344pt x 355.3275pt>
+ [26 <./assets/e5.JPG> <./assets/e6.JPG> <./assets/e7.JPG>]
+<./assets/e9.JPG, id=129, 592.46344pt x 355.3275pt>
 File: ./assets/e9.JPG Graphic file (type jpg)
 <use ./assets/e9.JPG>
-Package pdftex.def Info: ./assets/e9.JPG  used on input line 689.
+Package pdftex.def Info: ./assets/e9.JPG  used on input line 796.
 (pdftex.def)             Requested size: 318.66948pt x 191.12576pt.
-<./assets/e10.JPG, id=117, 520.94624pt x 222.8325pt>
+<./assets/e10.JPG, id=130, 520.94624pt x 222.8325pt>
 File: ./assets/e10.JPG Graphic file (type jpg)
 <use ./assets/e10.JPG>
-Package pdftex.def Info: ./assets/e10.JPG  used on input line 697.
+Package pdftex.def Info: ./assets/e10.JPG  used on input line 804.
 (pdftex.def)             Requested size: 318.66948pt x 136.30844pt.
-<./assets/e11.JPG, id=118, 928.97063pt x 325.215pt>
+<./assets/e11.JPG, id=131, 928.97063pt x 325.215pt>
 File: ./assets/e11.JPG Graphic file (type jpg)
 <use ./assets/e11.JPG>
-Package pdftex.def Info: ./assets/e11.JPG  used on input line 703.
+Package pdftex.def Info: ./assets/e11.JPG  used on input line 810.
 (pdftex.def)             Requested size: 455.24411pt x 159.37659pt.
- [25 <./assets/e8.JPG> <./assets/e9.JPG> <./assets/e10.JPG>]
-<./assets/e13.JPG, id=123, 721.94719pt x 75.28125pt>
+ [27 <./assets/e8.JPG> <./assets/e9.JPG> <./assets/e10.JPG>]
+<./assets/e13.JPG, id=135, 721.94719pt x 75.28125pt>
 File: ./assets/e13.JPG Graphic file (type jpg)
 <use ./assets/e13.JPG>
-Package pdftex.def Info: ./assets/e13.JPG  used on input line 708.
+Package pdftex.def Info: ./assets/e13.JPG  used on input line 815.
 (pdftex.def)             Requested size: 455.24411pt x 47.47107pt.
-<./assets/e14.JPG, id=124, 575.90157pt x 348.55219pt>
+<./assets/e14.JPG, id=136, 575.90157pt x 348.55219pt>
 File: ./assets/e14.JPG Graphic file (type jpg)
 <use ./assets/e14.JPG>
-Package pdftex.def Info: ./assets/e14.JPG  used on input line 716.
+Package pdftex.def Info: ./assets/e14.JPG  used on input line 823.
 (pdftex.def)             Requested size: 364.19667pt x 220.42934pt.
-<./assets/e15.JPG, id=125, 435.12563pt x 197.98969pt>
+<./assets/e15.JPG, id=137, 435.12563pt x 197.98969pt>
 File: ./assets/e15.JPG Graphic file (type jpg)
 <use ./assets/e15.JPG>
-Package pdftex.def Info: ./assets/e15.JPG  used on input line 721.
+Package pdftex.def Info: ./assets/e15.JPG  used on input line 828.
 (pdftex.def)             Requested size: 364.19667pt x 165.72713pt.
- [26 <./assets/e11.JPG> <./assets/e13.JPG> <./assets/e14.JPG>]
-<./assets/e16.JPG, id=129, 436.63126pt x 143.03438pt>
+ [28 <./assets/e11.JPG> <./assets/e13.JPG> <./assets/e14.JPG>]
+<./assets/e16.JPG, id=141, 436.63126pt x 143.03438pt>
 File: ./assets/e16.JPG Graphic file (type jpg)
 <use ./assets/e16.JPG>
-Package pdftex.def Info: ./assets/e16.JPG  used on input line 726.
+Package pdftex.def Info: ./assets/e16.JPG  used on input line 833.
 (pdftex.def)             Requested size: 455.24411pt x 149.13199pt.
-<./assets/e17.JPG, id=130, 619.56468pt x 58.71938pt>
+<./assets/e17.JPG, id=142, 619.56468pt x 58.71938pt>
 File: ./assets/e17.JPG Graphic file (type jpg)
 <use ./assets/e17.JPG>
-Package pdftex.def Info: ./assets/e17.JPG  used on input line 731.
+Package pdftex.def Info: ./assets/e17.JPG  used on input line 838.
 (pdftex.def)             Requested size: 455.24411pt x 43.1452pt.
-<./assets/e18.JPG, id=131, 361.35pt x 241.65282pt>
+<./assets/e18.JPG, id=143, 361.35pt x 241.65282pt>
 File: ./assets/e18.JPG Graphic file (type jpg)
 <use ./assets/e18.JPG>
-Package pdftex.def Info: ./assets/e18.JPG  used on input line 737.
+Package pdftex.def Info: ./assets/e18.JPG  used on input line 844.
 (pdftex.def)             Requested size: 364.19667pt x 243.55856pt.
-<./assets/e19.JPG, id=132, 581.92406pt x 211.54031pt>
+<./assets/e19.JPG, id=144, 581.92406pt x 211.54031pt>
 File: ./assets/e19.JPG Graphic file (type jpg)
 <use ./assets/e19.JPG>
-Package pdftex.def Info: ./assets/e19.JPG  used on input line 741.
+Package pdftex.def Info: ./assets/e19.JPG  used on input line 848.
 (pdftex.def)             Requested size: 364.19667pt x 132.39311pt.
 
-[27 <./assets/e15.JPG> <./assets/e16.JPG> <./assets/e17.JPG>]
-<./assets/e19e20.JPG, id=136, 676.77844pt x 219.06844pt>
+[29 <./assets/e15.JPG> <./assets/e16.JPG> <./assets/e17.JPG>]
+<./assets/e19e20.JPG, id=148, 676.77844pt x 219.06844pt>
 File: ./assets/e19e20.JPG Graphic file (type jpg)
 <use ./assets/e19e20.JPG>
-Package pdftex.def Info: ./assets/e19e20.JPG  used on input line 746.
+Package pdftex.def Info: ./assets/e19e20.JPG  used on input line 853.
 (pdftex.def)             Requested size: 364.19667pt x 117.89072pt.
-<./assets/e21.JPG, id=137, 573.64313pt x 362.85562pt>
+<./assets/e21.JPG, id=149, 573.64313pt x 362.85562pt>
 File: ./assets/e21.JPG Graphic file (type jpg)
 <use ./assets/e21.JPG>
-Package pdftex.def Info: ./assets/e21.JPG  used on input line 752.
+Package pdftex.def Info: ./assets/e21.JPG  used on input line 859.
 (pdftex.def)             Requested size: 364.19667pt x 230.37753pt.
- [28 <./assets/e18.JPG> <./assets/e19.JPG> <./assets/e19e20.JPG>]
-<./assets/e22.JPG, id=141, 809.27344pt x 316.93407pt>
+ [30 <./assets/e18.JPG> <./assets/e19.JPG> <./assets/e19e20.JPG>]
+<./assets/e22.JPG, id=154, 809.27344pt x 316.93407pt>
 File: ./assets/e22.JPG Graphic file (type jpg)
 <use ./assets/e22.JPG>
-Package pdftex.def Info: ./assets/e22.JPG  used on input line 757.
+Package pdftex.def Info: ./assets/e22.JPG  used on input line 864.
 (pdftex.def)             Requested size: 364.19667pt x 142.62868pt.
-<./assets/e23.JPG, id=142, 618.81187pt x 56.46094pt>
+<./assets/e23.JPG, id=155, 618.81187pt x 56.46094pt>
 File: ./assets/e23.JPG Graphic file (type jpg)
 <use ./assets/e23.JPG>
-Package pdftex.def Info: ./assets/e23.JPG  used on input line 762.
+Package pdftex.def Info: ./assets/e23.JPG  used on input line 869.
 (pdftex.def)             Requested size: 455.24411pt x 41.53833pt.
-<./assets/e24.JPG, id=143, 1129.97156pt x 543.53062pt>
+<./assets/e24.JPG, id=156, 1129.97156pt x 543.53062pt>
 File: ./assets/e24.JPG Graphic file (type jpg)
 <use ./assets/e24.JPG>
-Package pdftex.def Info: ./assets/e24.JPG  used on input line 768.
+Package pdftex.def Info: ./assets/e24.JPG  used on input line 875.
 (pdftex.def)             Requested size: 455.24411pt x 218.97588pt.
- [29 <./assets/e21.JPG> <./assets/e22.JPG> <./assets/e23.JPG>]
-Overfull \hbox (57.15576pt too wide) in paragraph at lines 801--801
+ [31 <./assets/e21.JPG> <./assets/e22.JPG> <./assets/e23.JPG>]
+Overfull \hbox (57.15576pt too wide) in paragraph at lines 908--908
 [] \T1/cmtt/m/n/12 c_udnClientId : UDINT := 16#ED387206;   // The given client 
 id of the standard PLC[] 
  []
 
 
-Overfull \hbox (26.2883pt too wide) in paragraph at lines 801--801
+Overfull \hbox (26.2883pt too wide) in paragraph at lines 908--908
 [] \T1/cmtt/m/n/12 fbStartBA(xExecute := (fbSafeApp.xBootAppConfirmationRequest
 ed AND xStartBA),[] 
  []
 
 
-Overfull \hbox (131.23767pt too wide) in paragraph at lines 801--801
+Overfull \hbox (131.23767pt too wide) in paragraph at lines 908--908
 [] \T1/cmtt/m/n/12 // For automatic test execution FB with the restart of the b
 ootapplication is also implemented[] 
  []
 
-[30 <./assets/e24.JPG>]
-<./assets/e25.JPG, id=150, 1245.9047pt x 495.35063pt>
+[32 <./assets/e24.JPG>]
+<./assets/e25.JPG, id=163, 1245.9047pt x 495.35063pt>
 File: ./assets/e25.JPG Graphic file (type jpg)
 <use ./assets/e25.JPG>
-Package pdftex.def Info: ./assets/e25.JPG  used on input line 807.
+Package pdftex.def Info: ./assets/e25.JPG  used on input line 914.
 (pdftex.def)             Requested size: 455.24411pt x 180.99422pt.
-<./assets/e26.JPG, id=151, 875.52094pt x 581.92406pt>
+<./assets/e26.JPG, id=164, 875.52094pt x 581.92406pt>
 File: ./assets/e26.JPG Graphic file (type jpg)
 <use ./assets/e26.JPG>
-Package pdftex.def Info: ./assets/e26.JPG  used on input line 812.
+Package pdftex.def Info: ./assets/e26.JPG  used on input line 919.
 (pdftex.def)             Requested size: 455.24411pt x 302.58449pt.
- [31 <./assets/e25.JPG> <./assets/e26.JPG>]
-<./assets/16.JPG, id=156, 666.23906pt x 484.81125pt>
-File: ./assets/16.JPG Graphic file (type jpg)
-<use ./assets/16.JPG>
-Package pdftex.def Info: ./assets/16.JPG  used on input line 830.
-(pdftex.def)             Requested size: 455.24411pt x 331.27997pt.
-<./assets/17.JPG, id=157, 498.36188pt x 539.76656pt>
+<./assets/17.JPG, id=165, 498.36188pt x 539.76656pt>
 File: ./assets/17.JPG Graphic file (type jpg)
 <use ./assets/17.JPG>
-Package pdftex.def Info: ./assets/17.JPG  used on input line 846.
+Package pdftex.def Info: ./assets/17.JPG  used on input line 930.
 (pdftex.def)             Requested size: 227.62206pt x 246.5331pt.
- [32 <./assets/16.JPG>]
-Overfull \hbox (15.46925pt too wide) in paragraph at lines 859--860
+ [33 <./assets/e25.JPG> <./assets/e26.JPG>]
+Overfull \hbox (15.46925pt too wide) in paragraph at lines 943--944
 []\T1/Roboto-LF/light/n/12 Navigate to \T1/cmtt/m/n/12 <Safety-Device> \TS1/cmt
 t/m/n/12 ^^Y \T1/cmtt/m/n/12 Safety Logic \TS1/cmtt/m/n/12 ^^Y \T1/cmtt/m/n/12 
 SafetyApp \TS1/cmtt/m/n/12 ^^Y \T1/cmtt/m/n/12 Logical I/Os\T1/Roboto-LF/light/
 n/12 . 
  []
 
-<./assets/18.JPG, id=161, 482.55281pt x 356.83313pt>
+<./assets/18.JPG, id=169, 482.55281pt x 356.83313pt>
 File: ./assets/18.JPG Graphic file (type jpg)
 <use ./assets/18.JPG>
-Package pdftex.def Info: ./assets/18.JPG  used on input line 865.
+Package pdftex.def Info: ./assets/18.JPG  used on input line 949.
 (pdftex.def)             Requested size: 273.14923pt x 201.99222pt.
 Package textcomp Info: Symbol \textrightarrow not provided by
 (textcomp)             font family Roboto-LF in TS1 encoding.
-(textcomp)             Default family used instead on input line 871.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 8
-71.
+(textcomp)             Default family used instead on input line 955.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 9
+55.
 (C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/m/n' instead on input line 871.
+(Font)              using `T1/cmss/m/n' instead on input line 955.
 
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-871.
+955.
 (C:\Users\leopo\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `TS1/cmss/b/n' undefined
 (Font)              using `TS1/cmss/m/n' instead
-(Font)              for symbol `textrightarrow' on input line 871.
+(Font)              for symbol `textrightarrow' on input line 955.
 
-[33 <./assets/17.JPG> <./assets/18.JPG>]
-<./assets/19.JPG, id=165, 504.38437pt x 365.11406pt>
+[34 <./assets/17.JPG> <./assets/18.JPG>]
+<./assets/19.JPG, id=173, 504.38437pt x 365.11406pt>
 File: ./assets/19.JPG Graphic file (type jpg)
 <use ./assets/19.JPG>
-Package pdftex.def Info: ./assets/19.JPG  used on input line 876.
+Package pdftex.def Info: ./assets/19.JPG  used on input line 960.
 (pdftex.def)             Requested size: 318.66948pt x 230.68047pt.
-<./assets/21.JPG, id=166, 566.115pt x 267.24844pt>
+<./assets/21.JPG, id=174, 566.115pt x 267.24844pt>
 File: ./assets/21.JPG Graphic file (type jpg)
 <use ./assets/21.JPG>
-Package pdftex.def Info: ./assets/21.JPG  used on input line 893.
+Package pdftex.def Info: ./assets/21.JPG  used on input line 977.
 (pdftex.def)             Requested size: 364.19667pt x 171.93147pt.
-<./assets/22.JPG, id=167, 1105.12875pt x 395.22656pt>
+<./assets/22.JPG, id=175, 1105.12875pt x 395.22656pt>
 File: ./assets/22.JPG Graphic file (type jpg)
 <use ./assets/22.JPG>
-Package pdftex.def Info: ./assets/22.JPG  used on input line 898.
+Package pdftex.def Info: ./assets/22.JPG  used on input line 982.
 (pdftex.def)             Requested size: 455.24411pt x 162.80379pt.
- [34 <./assets/19.JPG> <./assets/21.JPG>]
-<./assets/23.JPG, id=172, 982.42032pt x 442.65375pt>
+ [35 <./assets/19.JPG> <./assets/21.JPG>]
+<./assets/23.JPG, id=180, 982.42032pt x 442.65375pt>
 File: ./assets/23.JPG Graphic file (type jpg)
 <use ./assets/23.JPG>
-Package pdftex.def Info: ./assets/23.JPG  used on input line 910.
+Package pdftex.def Info: ./assets/23.JPG  used on input line 994.
 (pdftex.def)             Requested size: 455.24411pt x 205.12265pt.
- [35 <./assets/22.JPG> <./assets/23.JPG>]
-<./assets/24.JPG, id=176, 1138.2525pt x 408.77719pt>
+ [36 <./assets/22.JPG> <./assets/23.JPG>]
+<./assets/24.JPG, id=185, 1138.2525pt x 408.77719pt>
 File: ./assets/24.JPG Graphic file (type jpg)
 <use ./assets/24.JPG>
-Package pdftex.def Info: ./assets/24.JPG  used on input line 929.
+Package pdftex.def Info: ./assets/24.JPG  used on input line 1013.
 (pdftex.def)             Requested size: 455.24411pt x 163.48926pt.
- [36 <./assets/24.JPG>]
-Overfull \hbox (53.59476pt too wide) in paragraph at lines 976--977
+ [37 <./assets/24.JPG>]
+Overfull \hbox (53.59476pt too wide) in paragraph at lines 1060--1061
 \T1/Roboto-LF/light/n/12 See on-line help: $\T1/cmtt/m/n/12 https : / / content
  . helpme -[] codesys . com / en / CODESYS \ %20Safety \ %20Extension /
  []
 
-[37]
-Overfull \hbox (10.49103pt too wide) in paragraph at lines 989--990
+[38]
+Overfull \hbox (10.49103pt too wide) in paragraph at lines 1073--1074
 []\T1/Roboto-LF/bold/n/12 V2.4\T1/Roboto-LF/light/n/12 : Di-ag-no-sis word is o
 ver-writ-ten by higher-priority di-ag-no-sis, pri-or-ity from \T1/cmtt/m/n/12 1
 6#C0xx
  []
 
-[38]
-<./assets/25.JPG, id=187, 1167.61218pt x 453.19313pt>
+[39]
+<./assets/25.JPG, id=195, 1167.61218pt x 453.19313pt>
 File: ./assets/25.JPG Graphic file (type jpg)
 <use ./assets/25.JPG>
-Package pdftex.def Info: ./assets/25.JPG  used on input line 1027.
+Package pdftex.def Info: ./assets/25.JPG  used on input line 1111.
 (pdftex.def)             Requested size: 455.24411pt x 176.6962pt.
-<./assets/26.JPG, id=188, 843.90282pt x 464.4853pt>
+<./assets/26.JPG, id=196, 843.90282pt x 464.4853pt>
 File: ./assets/26.JPG Graphic file (type jpg)
 <use ./assets/26.JPG>
-Package pdftex.def Info: ./assets/26.JPG  used on input line 1035.
+Package pdftex.def Info: ./assets/26.JPG  used on input line 1119.
 (pdftex.def)             Requested size: 455.24411pt x 250.57027pt.
- [39 <./assets/25.JPG> <./assets/26.JPG>]
-Overfull \hbox (81.51727pt too wide) in paragraph at lines 1044--1045
+ [40 <./assets/25.JPG> <./assets/26.JPG>]
+Overfull \hbox (81.51727pt too wide) in paragraph at lines 1128--1129
 []\T1/Roboto-LF/light/n/12 To start the Boot Ap-pli-ca-tion, the cur-rent value
  of the FB out-put \T1/cmtt/m/n/12 SafeApplication.BootAppConfirmation
  []
 
-<./assets/27.JPG, id=192, 657.2053pt x 388.45125pt>
+<./assets/27.JPG, id=200, 657.2053pt x 388.45125pt>
 File: ./assets/27.JPG Graphic file (type jpg)
 <use ./assets/27.JPG>
-Package pdftex.def Info: ./assets/27.JPG  used on input line 1052.
+Package pdftex.def Info: ./assets/27.JPG  used on input line 1136.
 (pdftex.def)             Requested size: 364.19667pt x 215.26698pt.
-[40 <./assets/27.JPG>] [41]
-<./assets/c1.JPG, id=199, 459.96844pt x 353.82187pt>
+[41 <./assets/27.JPG>] [42]
+<./assets/c1.JPG, id=208, 459.96844pt x 353.82187pt>
 File: ./assets/c1.JPG Graphic file (type jpg)
 <use ./assets/c1.JPG>
-Package pdftex.def Info: ./assets/c1.JPG  used on input line 1121.
+Package pdftex.def Info: ./assets/c1.JPG  used on input line 1200.
 (pdftex.def)             Requested size: 364.19667pt x 280.16408pt.
-<./assets/c2.JPG, id=200, 379.4175pt x 289.83281pt>
-File: ./assets/c2.JPG Graphic file (type jpg)
-<use ./assets/c2.JPG>
-Package pdftex.def Info: ./assets/c2.JPG  used on input line 1130.
-(pdftex.def)             Requested size: 364.19667pt x 278.2098pt.
- [42 <./assets/c1.JPG>]
-<./assets/c3.PNG, id=204, 1238.05392pt x 773.89125pt>
+ [43 <./assets/c1.JPG>]
+<./assets/c3.PNG, id=212, 1238.05392pt x 773.89125pt>
 File: ./assets/c3.PNG Graphic file (type png)
 <use ./assets/c3.PNG>
-Package pdftex.def Info: ./assets/c3.PNG  used on input line 1141.
+Package pdftex.def Info: ./assets/c3.PNG  used on input line 1238.
 (pdftex.def)             Requested size: 455.24411pt x 284.56398pt.
- [43 <./assets/c2.JPG>]
-<./assets/c4.jpg, id=209, 377.15906pt x 524.71031pt>
+<./assets/c4.jpg, id=213, 377.15906pt x 524.71031pt>
 File: ./assets/c4.jpg Graphic file (type jpg)
 <use ./assets/c4.jpg>
-Package pdftex.def Info: ./assets/c4.jpg  used on input line 1150.
+Package pdftex.def Info: ./assets/c4.jpg  used on input line 1254.
 (pdftex.def)             Requested size: 182.09486pt x 253.33125pt.
-<./assets/c5.jpg, id=210, 383.18156pt x 529.22719pt>
+<./assets/c5.jpg, id=214, 383.18156pt x 529.22719pt>
 File: ./assets/c5.jpg Graphic file (type jpg)
 <use ./assets/c5.jpg>
-Package pdftex.def Info: ./assets/c5.jpg  used on input line 1157.
+Package pdftex.def Info: ./assets/c5.jpg  used on input line 1260.
 (pdftex.def)             Requested size: 182.09486pt x 251.49858pt.
-
-[44 <./assets/c3.PNG> <./assets/c4.jpg>]
-<./assets/c6.jpg, id=215, 566.115pt x 319.1925pt>
+ [44 <./assets/c3.PNG>]
+<./assets/c6.jpg, id=219, 566.115pt x 319.1925pt>
 File: ./assets/c6.jpg Graphic file (type jpg)
 <use ./assets/c6.jpg>
-Package pdftex.def Info: ./assets/c6.jpg  used on input line 1168.
+Package pdftex.def Info: ./assets/c6.jpg  used on input line 1278.
 (pdftex.def)             Requested size: 182.09486pt x 102.6697pt.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/l/n' aliased to
-(Font)              `T1/Roboto-LF/light/n' on input line 1172.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/light/n' will be
-(Font)              scaled to size 24.88pt on input line 1172.
-<./assets/c7.jpg, id=216, 569.12625pt x 320.69812pt>
+<./assets/c7.jpg, id=220, 569.12625pt x 320.69812pt>
 File: ./assets/c7.jpg Graphic file (type jpg)
 <use ./assets/c7.jpg>
-Package pdftex.def Info: ./assets/c7.jpg  used on input line 1176.
+Package pdftex.def Info: ./assets/c7.jpg  used on input line 1286.
 (pdftex.def)             Requested size: 182.09486pt x 102.61081pt.
- [45 <./assets/c5.jpg> <./assets/c6.jpg> <./assets/c7.jpg>] (Projekt.aux)
+
+[45 <./assets/c4.jpg> <./assets/c5.jpg> <./assets/c6.jpg> <./assets/c7.jpg>]
+(Projekt.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1040,11 +1024,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 11403 strings out of 474485
- 187544 string characters out of 5743735
+ 11388 strings out of 474485
+ 187294 string characters out of 5743735
  1980542 words of memory out of 5000000
- 33517 multiletter control sequences out of 15000+600000
- 629813 words of font info for 112 fonts, out of 8000000 for 9000
+ 33501 multiletter control sequences out of 15000+600000
+ 618177 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,8n,117p,1198b,1298s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\leopo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss
@@ -1057,9 +1041,9 @@ onts/type1/google/roboto/Roboto-Bold.pfb><C:/Users/leopo/AppData/Local/Programs
 /MiKTeX/fonts/type1/google/roboto/Roboto-Light.pfb><C:/Users/leopo/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/google/roboto/Roboto-LightItalic.pfb><C:/Users/le
 opo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Projekt.pdf (45 pages, 5485213 bytes).
+Output written on Projekt.pdf (46 pages, 5590573 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
+ 427 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  291 words of extra memory for PDF output out of 10000 (max. 10000000)
 

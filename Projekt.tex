@@ -51,31 +51,167 @@
 \titleformat{\subsection}{\normalfont\large\bfseries\sffamily}{\thesubsection}{1em}{}
 
 
-% Configuring the title page
-\title{\sffamily\bfseries Project Documentation: Virtual Safety and A4P Safety Education Kit}
-\author{\sffamily Project Team}
-\date{\sffamily \today}
-
 
 \begin{document}
+	
+	\begin{titlepage}
+		\centering
+		\vspace*{2cm}
+		
+		% Haupttitel
+		{\Huge\sffamily\bfseries Safety Education Kit}\\[0.5cm]
+		{\Large\sffamily Virtual Safety with CODESYS and A4P}\\[1.2cm]
+		
+		\rule{\linewidth}{1pt}\\[0.4cm]
+		{\Large\sffamily Project Documentation}\\[0.3cm]
+		{\sffamily\large „Virtuelle Safety und ein A4P-Safety-Education-Kit“}\\[0.3cm]
+		\rule{\linewidth}{1pt}\\[2cm]
+		
+		% Autoren zentriert
+		{\sffamily\large \textbf{Authors:}}\\[0.5cm]
+		{\sffamily Lukas Fischer}\\
+		{\sffamily Patrick Leitner}\\
+		{\sffamily Jakob Güttinger}\\
+		{\sffamily Leopold Weber}\\[1.5cm]
+		
+		% Institution & Partner
+		{\sffamily\large \textbf{Institution:}}\\
+		{\sffamily Hochschule Kempten}\\[0.5cm]
+		
+		{\sffamily\large \textbf{Partner:}}\\
+		{\sffamily GROB, Magnet-Schultz, Christ Electronics, etc.}\\[0.5cm]
+		
+		% Kontakt
+		{\sffamily\large \textbf{Contact:}}\\
+		{\sffamily Aaron Windmüller (CODESYS)}\\
+		{\ttfamily a.windmueller@codesys.com}\\[2cm]
+		
+		\vfill
+		{\sffamily\large \today}
+	\end{titlepage}
+	
+	\clearpage
+	\tableofcontents
+	\clearpage
 
-\maketitle
-\clearpage
-
-\tableofcontents
-\clearpage
 
 \section{Introduction}
 The project "Virtual Safety and A4P Safety Education Kit" aims to integrate the "Virtual Safety" functionality of CODESYS, evaluate its application within the "Allgäu 4 Production (A4P)" platform, and develop a Safety Education Kit.
 
-\section{Hardware Requirements}
-The following hardware components are required for the project:
+%\section{Concept of Virtual Safety Control}
+%A central aspect of this project is the use of \textit{CODESYS Virtual Safe Control}, a revolutionary technology that enables functional safety according to IEC 61508 (SIL3) on standard industrial PCs or servers without the need for specialized, redundant safety hardware.
+
+%The core concept is based on fully implementing the traditionally hardware-based dual-channel safety architecture in software. Instead of using two separate, mutually monitoring processors, a standard CPU is utilized, on which the safety application runs in a virtualized environment. This is achieved through the TÜV SÜD-certified method of "Diversified Encoding" (based on Coded Processing):
+
+%\begin{itemize}
+	%\item \textbf{Two logical software channels:} The safety application is executed sequentially on a single CPU core in two logical channels.
+	%\begin{itemize}
+		%\item \textbf{1st Channel:} Executes the application in its original form.
+		%\item \textbf{2nd Channel:} Executes the application with encoded algorithms. This encoding enables the detection of execution errors.
+	%\end{itemize}
+	%\item \textbf{Continuous comparison:} The results of both channels are constantly compared. In case of discrepancies, a safe state is assumed. Additionally, the control flow in the encoded channel is continuously monitored.
+%\end{itemize}
+
+\section{Virtual Safety Control and System Requirements}
+
+\subsection{Concept of Virtual Safety Control}
+A central aspect of this project is the use of \textit{CODESYS Virtual Safe Control}, a revolutionary technology that enables functional safety according to IEC 61508 (SIL3) on standard industrial PCs or servers without the need for specialized, redundant safety hardware.
+
+The core concept is based on fully implementing the traditionally hardware-based dual-channel safety architecture in software. Instead of using two separate, mutually monitoring processors, a standard CPU is utilized, on which the safety application runs in a virtualized environment. This is achieved through the TÜV SÜD-certified method of "Diversified Encoding" (based on Coded Processing):
+
 \begin{itemize}
-\item 1 router
-\item 2 computers with Debian Linux installed  
-Preferably with 2 LAN ports, otherwise an adapter can be used.
-\item 1 Windows PC
+	\item \textbf{Two logical software channels:} The safety application is executed sequentially on a single CPU core in two logical channels.
+	\begin{itemize}
+		\item \textbf{1st Channel:} Executes the application in its original form.
+		\item \textbf{2nd Channel:} Executes the application with encoded algorithms. This encoding enables the detection of execution errors.
+	\end{itemize}
+	\item \textbf{Continuous comparison:} The results of both channels are constantly compared. In case of discrepancies, a safe state is assumed. Additionally, the control flow in the encoded channel is continuously monitored.
 \end{itemize}
+
+This purely software-based approach eliminates the need for physical safety PLCs and allows control and safety functions to be flexibly consolidated on a single hardware platform. The advantages include significant cost and space savings, reduced dependency on specific hardware manufacturers, and high scalability, as safe control instances can be easily created virtually as needed.
+
+\section{System Requirements for Host Device}
+This section outlines the software and hardware requirements necessary for the host device to ensure seamless installation and operation of the CODESYS packages.
+
+
+
+\subsection{Software Requirements}
+The following subsections detail the software prerequisites for the host device, including architecture compatibility, operating system specifications, and real-time capabilities.
+
+\begin{itemize}
+	\item \textbf{CODESYS Safe Control XS} (License ID: 230000001)
+	\item \textbf{CODESYS PROFIsafe V2.6} (License ID: 230000006)
+	\item \textbf{CODESYS Control Performance M} (License ID: 230000003)
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{28.jpg}
+	\caption{CODESYS Software Bundle}
+	\label{fig:codesys_bundle}
+\end{figure}
+
+\subsubsection{Architecture and Compatibility}
+To support the CODESYS environment, the host device must meet the following architectural requirements:
+
+\begin{itemize}
+	\item \textbf{64-bit CPU (AMD64 architecture)}: Required for compatibility with modern CODESYS components.
+	\item \textbf{Support for i386 (32-bit) architecture}: Essential when using \texttt{CODESYS Control for Linux SL - AMD64} in conjunction with \texttt{Safe Control}, which relies on 32-bit libraries.
+	\item \textbf{Enable 32-bit support on Debian-based systems}:
+	\begin{lstlisting}
+		sudo dpkg --add-architecture i386
+		sudo apt update
+		sudo apt install libc6-i386
+	\end{lstlisting}
+\end{itemize}
+
+\subsubsection{Operating System Requirements}
+The host device must run an operating system with the following characteristics:
+
+\begin{itemize}
+	\item \textbf{Debian-based distribution}: Compatible with the \texttt{dpkg} package manager (e.g., Debian, Ubuntu).
+	\item \textbf{RPM-based systems}: From version \textbf{4.15.0.0} onward, the Linux Deploy Tool allows manual installation of RPM packages, supporting distributions like Red Hat.
+\end{itemize}
+
+\subsubsection{Real-Time Capability}
+For time-critical applications, real-time support is necessary:
+
+\begin{itemize}
+	\item \textbf{Real-time Linux kernel}: Required to ensure deterministic system behavior.
+	\item \textbf{Optimization guidance}: Refer to the official CODESYS documentation for tuning and setup:
+	\url{https://content.helpmecodesys.com/de/CODESYS%20Control/_rtsl_performance_optimization_linux.html}
+\end{itemize}
+
+\subsection{Hardware Requirements}
+The following hardware components are necessary to set up the project environment:
+
+\begin{itemize}
+	\item \textbf{1 Router}: Ensures reliable network communication between hosts.
+	\item \textbf{2 Debian Linux Computers}: Ideally each with two LAN interfaces. If unavailable, USB-to-Ethernet adapters may be used.
+	\item \textbf{1 Windows PC}: Used for configuration, monitoring, or optional supervisory tasks.
+\end{itemize}
+
+\subsubsection{Minimum Hardware Specifications}
+To ensure reliable performance under real-time and industrial conditions, the following hardware setups are the minimum recommended specifications. Systems with lower specs may not support the required CODESYS components effectively.
+
+\textbf{Host 1:}
+\begin{itemize}
+	\item AMD A6-7310 CPU
+	\item 4 GB RAM
+	\item 32 GB SSD
+	\item Gigabit LAN + WLAN AC/N
+\end{itemize}
+
+\textbf{Host 2:}
+\begin{itemize}
+	\item Intel Celeron N3150 CPU
+	\item 4 GB RAM
+	\item 32 GB SSD
+	\item Gigabit LAN + WLAN AC/N
+\end{itemize}
+
+These configurations have been validated for use in the project. Performance or compatibility may degrade on systems with slower processors or less memory/storage.
+
 
 \section{Debian Installation}
 The following steps describe the installation of Debian:
@@ -258,7 +394,7 @@ sudo cyclictest -p 99 -t -m
 
 \section{For Native Linux SL Installation (a SoftSPS)}
 
-The following packages are required to run CODESYS Control directly on a Linux host:
+Now switch to the Windows PC with CODESYS installed. Install the following packages with the CODESYS installer \includegraphics[width=0.17\textwidth]{29.jpg}, which provides an overview of the CODESYS Package Manager where you can search for the required packages in the search bar. The following packages are required to run CODESYS Control directly on a Linux host:
 
 \begin{figure}[H]
 	\centering
@@ -294,40 +430,9 @@ If safety-relevant controllers are to be used, you additionally need:
 
 \newpage
 
-\section{Software Requirements of the Host Device}
 
-The host device must currently meet the following software requirements to ensure proper installation and operation of the necessary CODESYS packages.
 
-\subsection*{Architecture and Compatibility}
-
-\begin{itemize}
-	\item The host must use a \textbf{64-bit CPU (AMD64 architecture)}.
-	\item The operating system must support the \textbf{i386 (32-bit)} architecture. This is required specifically for using \texttt{CODESYS Control for Linux SL - AMD64} in combination with \texttt{Safe Control}, which requires 32-bit support.
-	\item To enable 32-bit support on Debian-based systems, execute the following commands:
-\end{itemize}
-
-\begin{lstlisting}
-sudo dpkg --add-architecture i386
-sudo apt update
-sudo apt install libc6-i386
-\end{lstlisting}
-
-\subsection*{Operating System Requirements}
-
-\begin{itemize}
-	\item The host device should run a \textbf{Debian-based distribution} that supports the \texttt{dpkg} package manager.
-	\item RPM-based systems (e.g., Red Hat) can be used as well. As of version \textbf{4.15.0.0}, the Linux Deploy Tool supports manual installation of RPM packages.
-\end{itemize}
-
-\subsection*{Real-Time Capability}
-
-\begin{itemize}
-	\item The Linux system must provide \textbf{real-time capability}.
-	\item For optimal configuration and tuning of the real-time environment, please refer to the official CODESYS online documentation:
-	
-	\url{https://content.helpmecodesys.com/de/CODESYS%20Control/_rtsl_performance_optimization_linux.html}
-\end{itemize}
-
+\newpage
 \newpage
 \section{Network Configuration}
 
@@ -335,7 +440,7 @@ For stable operation and correct communication with CODESYS and the Timeprovider
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{2.jpg}
+	\includegraphics[width=1\textwidth]{2n.png}
 	\caption{Recommended network configuration with WLAN and LAN devices}
 \end{figure}
 
@@ -348,12 +453,14 @@ The network consists of a central router that provides both WLAN and wired LAN c
 	\begin{itemize}
 		\item A Windows PC with CODESYS is connected via WLAN.
 		\item This device has an assigned IP address and establishes the connection to the CODESYS controller.
+		\item PCs connected via WLAN can also be connected via LAN if needed. (WLAN was used in this setup due to a lack of available LAN ports.)
 	\end{itemize}
 	
 	\item \textbf{LAN:}
 	\begin{itemize}
-		\item All LAN devices also have static IP addresses.
+		\item All LAN devices have static IP addresses.
 		\item These devices are connected via LAN to a \textbf{Timeprovider} to provide a precise time source within the network.
+		\item Devices connected via LAN must use wired connections.
 	\end{itemize}
 \end{itemize}
 
@@ -813,29 +920,6 @@ Subsequently, the Safe Control is started and is in the safe state (BA).
 \end{figure}
 
 
-\subsection{Location of the Configuration File and Client ID for Safety Runtime}
-
-For the boot application confirmation, a \textbf{Client ID} is required. The configuration file of the Safe Control runtime system contains a default Client ID.
-
-It is also possible to define custom Client IDs individually in this configuration file.
-
-For the package-based Safe Control system, the configuration file can be found in the following directory on the Linux host:
-
-\begin{verbatim}
-	/etc/codesyssafecontrol
-\end{verbatim}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{16.JPG}
-\end{figure}
-
-The log files for the Safe Control runtime system are stored in:
-
-\begin{verbatim}
-	/var/opt/codesyssafecontrol
-\end{verbatim}
-
 \subsection{Renaming the Safe Control Device}
 
 Renaming the safety controller is possible via the communication settings:
@@ -1089,9 +1173,6 @@ fbRestart(xExecute := xRestart);
 
 
 
-\section{Debugging}
-Only online commands are supported: \texttt{Start}, \texttt{Stop}, \texttt{Write}, and \texttt{Force}. Forcing is limited to a maximum of 20 entries.
-
 \section{Device Editors}
 \begin{itemize}
 	\item Communication
@@ -1100,9 +1181,6 @@ Only online commands are supported: \texttt{Start}, \texttt{Stop}, \texttt{Write
 	\item Information
 \end{itemize}
 
-\section{Additional Restrictions}
-\textbf{Lib-Manager}: Users cannot develop libraries; this is not supported. Currently, only libraries with external FBs are available.
-
 \subsection{Further Links}
 \begin{itemize}
 	\item Online Help for Virtual Safe Control: \url{https://content.helpme-codesys.com/de/CODESYS%20Control/_rtsl_scenario_safe_house.html}
@@ -1110,6 +1188,7 @@ Only online commands are supported: \texttt{Start}, \texttt{Stop}, \texttt{Write
 \end{itemize}
 
 \newpage
+
 \section{Use Case: Virtual Safe Emergency Stop}
 
 \subsection{Opening the Project}
@@ -1119,54 +1198,85 @@ To begin, open the project \textbf{vSafeTest\_sim}, located in the appendix.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{c1.JPG}
+	\caption{Project loading screen}
 \end{figure}
 
 After a brief loading period, a project environment popup will appear. Click \textbf{OK} in the bottom-right corner to continue.
 
-Once the project has fully loaded, navigate to the \textbf{Application} section under \textbf{Device}, and click \textbf{Login} to establish a connection with the device.
+\subsection{Establishing Device Connections}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{c2.JPG}
-\end{figure}
+1. Connect to the Device:
+\begin{itemize}
+	\item Double-click on \textbf{Device} in the project tree.
+	\item Ensure the correct \textbf{VGateway} is selected. If not, select it from the list.
+	\item Click \textbf{Scan Network}, then select the appropriate PLC.
+	\item Verify that both the device and gateway display green status indicators, confirming a connection to the Linux PC.
+\end{itemize}
 
-The \textbf{VGateway} should already be pre-selected. Use the same login credentials as previously used. For detailed information on logging into the Safe POU, refer to Section~\ref{sec:safe-pou-changes}.
+2. Connect to Safe Control:
+\begin{itemize}
+	\item Double-click on \textbf{CODESYS Safe Control for Linux SL} in the project tree.
+	\item Ensure the correct \textbf{VGateway} is selected. If not, select it from the list.
+	\item Click \textbf{Scan Network}, then select the appropriate PLC.
+	\item Verify that both the Safe Control and gateway display green status indicators, confirming a connection to the Linux PC.
+\end{itemize}
 
-Next, log into the Safe Control by right-clicking on \textbf{SafetyApp} and selecting \textbf{Login}. This action establishes the connection to both the standard and safe systems.
+3. Log into the Systems:
+\begin{itemize}
+	\item Navigate to the \textbf{Application} section under \textbf{Device} and click \textbf{Login} to connect to the standard system. Use the same credentials as previously used (see Section~\ref{sec:safe-pou-changes} for Safe POU login details).
+	\item Right-click on \textbf{SafetyApp} and select \textbf{Login} to connect to the safe system too.
+\end{itemize}
 
-Once the connection is successful, both devices will show green status indicators. Additionally, the central status bar will display \textbf{RUN} in green and \textbf{SAFE} in yellow. The device icons on the right-hand side of the screen will also appear green.
+4. Verify Connection Status:
+\begin{itemize}
+	\item Ensure both devices display green status indicators.
+	\item Confirm the central status bar shows both system \textbf{RUN}
+\end{itemize}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{c3.PNG}
+	\caption{Successful connection with green status indicators}
 \end{figure}
 
 \subsection{Handling Version Compatibility Issues}
 
-If you encounter version compatibility issues, right-click on the affected device and select \textbf{Update Device}. A popup window will appear, allowing you to choose the correct version. For this project, select \textbf{Linux SL 4.15.0.0}.
+If version compatibility issues arise:
+\begin{itemize}
+	\item Right-click on the affected device and select \textbf{Update Device}. Choose \textbf{Linux SL 4.15.0.0} from the popup window.
+	\item For Safe Control, select \textbf{CODESYS Safe Control}, click \textbf{Update Device}, and choose version \textbf{4.15.0.0}.
+\end{itemize}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.4\textwidth]{c4.jpg}
-\end{figure}
-
-To update the Safe Control version, select \textbf{CODESYS Safe Control}, click \textbf{Update Device}, and choose the appropriate version number—again, \textbf{4.15.0.0}.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.4\textwidth]{c5.jpg}
+	\begin{minipage}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{c4.jpg}
+		\caption{Device version update}
+	\end{minipage}
+	\hspace{0.02\textwidth}
+	\begin{minipage}{0.4\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{c5.jpg}
+		\caption{Safe Control version update}
+	\end{minipage}
 \end{figure}
 
 \subsection{Testing the Emergency Stop}
 
-To test the emergency stop (\textit{Not-Aus}), open the \textbf{Visualization} view. Toggle the switch labeled \textbf{Logical GVL Safe Out} to simulate an emergency stop. When the lever is flipped, the LED on the \textbf{EStop} indicator should turn on.
+To test the emergency stop (\textit{Not-Aus}):
+\begin{itemize}
+	\item Open the \textbf{Visualization} view.
+	\item Toggle the switch labeled \textbf{Logical GVL Safe Out} to simulate an emergency stop.
+	\item Verify that the \textbf{EStop} LED indicator lights up, confirming the emergency stop simulation was triggered correctly.
+\end{itemize}
 
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{c6.jpg}
-		\caption*{Flip the lever}
+		\caption{Flip the lever}
 	\end{minipage}
 	\hspace{0.02\textwidth}
 	{\Huge$\Rightarrow$}
@@ -1174,12 +1284,11 @@ To test the emergency stop (\textit{Not-Aus}), open the \textbf{Visualization} v
 	\begin{minipage}{0.4\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{c7.jpg}
-		\caption*{EStop LED lights up}
+		\caption{EStop LED lights up}
 	\end{minipage}
 \end{figure}
 
-This confirms that the emergency stop simulation was triggered correctly and that both the visual feedback and system response function as intended. With this, the setup and validation of the virtual safety mechanism are complete.
-
+This completes the setup and validation of the virtual safety mechanism, ensuring both visual feedback and system response function as intended.
 
 
 
